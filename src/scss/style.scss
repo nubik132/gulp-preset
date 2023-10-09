@@ -1,6 +1,22 @@
-body{
-    background-color: black;
-    span{
-        color: red;
+@supports (-webkit-appearance: none) {
+    .big-div{
+        $big-size: 1000px;
+        width: $big-size;
+        height: $big-size;
+        background-color: rgb(224, 138, 138);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        gap: 200px;
+
+        .little-div{
+            $little-size: 200px;
+            width: $little-size;
+            height: $little-size;
+            background-color: rgb(172, 223, 226);
+            border: 1px solid rgba(0, 0, 0, 0.288);
+        }
     }
 }
