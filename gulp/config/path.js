@@ -12,11 +12,12 @@ export const path = {
     },
     src: {
         scss: `${srcFolder}/scss/style.scss`,
-        html: `${srcFolder}/index.html`, //поменять
+        html: `${srcFolder}/*.html`,
         files: `${srcFolder}/files/**/*.*`,
     },
     watch: {
         scss: `${srcFolder}/scss/**/*.scss`,
+        html: `${srcFolder}/**/*.html`,
         files: `${srcFolder}/files/**/*.*`
     },
     clean: buildFolder,
